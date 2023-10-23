@@ -1,3 +1,7 @@
+"""
+A test module for gathering Twitch messages to an SQL database.
+"""
+
 import sqlite3
 import json
 
@@ -19,10 +23,13 @@ CREATE TABLE IF NOT EXISTS messages (
 """)
 
 def do_something(message):
+    """
+    When a message is received
+    """
     print(message)
 
     # NOTE: Does the indentation matter?
-    message_json = json.dumps(message, indent=4)
+    #message_json = json.dumps(message, indent=4)
     cmd = f"""
     INSERT INTO messages VALUES
     (
