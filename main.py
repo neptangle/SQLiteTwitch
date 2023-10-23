@@ -3,7 +3,7 @@ A test module for gathering Twitch messages to an SQL database.
 """
 
 import sqlite3
-import json
+#import json
 
 from twitch_chat_irc import twitch_chat_irc
 
